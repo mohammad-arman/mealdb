@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealDb Shop</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header starts-->
+    <header class="bg">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo-small.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-color" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-color" href="#">API</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-color" href="#">Forum</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- header ends -->
+    <!-- welcome starts -->
+    <section class="bg-welcome pad">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img src="images/meal-icon.png" alt="">
+          </div>
+          <div class="col-6 text-center">
+            <h2 class="text-color">Welcome to TheMealDB</h2>
+            <p class="text-color">Welcome to TheMealDB: An open, crowd-sourced database of Recipes from around the world.</p>
+            <p class="text-color">We also offer a <span class="text-danger">free JSON API</span> for anyone wanting to use it.</p>
+            <p class="text-color">If you like the site, please consider supporting us on Patreon by clicking the link below...</p>
+          </div>
+          <div class="col-3">
+            <img src="./images/meal-icon.png" alt="">
+          </div>
+        </div>
+        <!-- search part starts -->
+        <div class="input-group mt-3 w-50 mx-auto">
+          <input id="search-input" type="text" class="form-control" placeholder="Search the food you want" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button onclick="searchFood()" class="text-color btn btn-outline-secondary" type="button" id="button-search">Search</button>
+        </div>
+        <!-- search part ends -->
+      </div>
+        <!-- not found -->
+        <h2 id="not-found" class="text-center text-color">Please Something write for search..</h2>
+        <h2 id="wrong-input" class="text-center text-color">Please enter the right input..</h2>
+    </section>
+    <!-- welcome ends -->
+    <!-- details meal starts -->
+      <section class="bg-welcome">
+        <div class="container w-50 mx-auto pb-5" id="meal-details">
+          
+        </div>
+        </div>
+      </section>
+    <!-- details meal ends -->
+    <!-- search items starts -->
+    <section class="bg-welcome pbottom">
+      <div class="container">
+        <div id="search-item" class="row row-cols-1 row-cols-md-3 g-4"> 
+        </div>
+      </div>
+    </section>
+    <!-- search items ends -->
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+</html>

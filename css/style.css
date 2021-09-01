@@ -1,0 +1,26 @@
+.bg{
+    background-color: #23180d;
+}
+.text-color{
+    color: #ffffff;
+    font-size: 1.3em;
+}
+.bg-welcome{
+    background-color: #2d2013;
+}
+.pad{
+    padding: 110px 0;
+}
+#not-found{
+    display: none;
+    margin-top: 20px;
+    font-size: 2em;
+}
+#wrong-input{
+    display: none;
+    margin-top: 20px;
+    font-size: 2em;
+}
+.pbottom{
+    padding-bottom: 80px;
+}

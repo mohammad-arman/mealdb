@@ -1,12 +1,23 @@
+//press enter button
+const searchBtn = document.getElementById('button-search');
+const searchInput = document.getElementById("search-input");
+searchInput.addEventListener('keypress', function(event){
+  if(event.key === 'Enter'){
+    searchBtn.click();
+  }
+});
+//global variable
+const foundMessage = document.getElementById('not-found');
+const wrongInput = document.getElementById('wrong-input');
+//search data loading
 const searchFood = () => {
     const searchField = document.getElementById('search-input');
     const searchText = searchField.value;
      if(searchText == 0){
-        const foundMessage = document.getElementById('not-found');
         foundMessage.style.display = 'block';
     }
     else{
-        const foundMessage = document.getElementById('not-found');
+        // const foundMessage = document.getElementById('not-found');
         foundMessage.style.display = 'none';
         searchField.value = '';
         const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`;
@@ -21,12 +32,11 @@ const displaySearchResult = meals => {
     const mealDetails = document.getElementById("meal-details");
     mealDetails.textContent = '';
     if(meals == null){
-        const wrongInput = document.getElementById('wrong-input');
         wrongInput.style.display = 'block';
     }
    else{
     meals.forEach(meal => {
-        const wrongInput = document.getElementById('wrong-input');
+        // const wrongInput = document.getElementById('wrong-input');
         wrongInput.style.display = 'none';
         const div = document.createElement('div');
         div.classList.add('col');
